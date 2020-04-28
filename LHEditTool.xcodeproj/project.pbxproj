@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45517A66BDED489BAD500AE2 /* Pods_LHEditTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E56C64FDD35E0B3897E083 /* Pods_LHEditTool.framework */; };
+		9C814B50219D50E2003630B9 /* LHImageEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C814B4F219D50E2003630B9 /* LHImageEditCell.m */; };
+		9C814B53219D51BE003630B9 /* LHImageEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C814B52219D51BE003630B9 /* LHImageEditModel.m */; };
+		9C814B56219D6A4A003630B9 /* UIImage+Edit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C814B55219D6A4A003630B9 /* UIImage+Edit.m */; };
+		9C814B59219D790F003630B9 /* LHEditAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C814B58219D790F003630B9 /* LHEditAccessoryView.m */; };
+		9C814B5C219DD120003630B9 /* pickImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C814B5B219DD120003630B9 /* pickImage@2x.png */; };
+		9C814B5E219EACD8003630B9 /* keybord@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C814B5D219EACD8003630B9 /* keybord@2x.png */; };
+		9C814B60219EB3AE003630B9 /* keybordf@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C814B5F219EB3AE003630B9 /* keybordf@2x.png */; };
+		9C814B62219EB4AF003630B9 /* keybordff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C814B61219EB4AF003630B9 /* keybordff@2x.png */; };
+		9C814B6621A1A83C003630B9 /* NSString+LHCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C814B6521A1A83C003630B9 /* NSString+LHCellHeight.m */; };
+		9C814B6A21A5531C003630B9 /* LHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C814B6921A55317003630B9 /* LHLabel.m */; };
+		9C814B6D21AA429E003630B9 /* LHSubEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C814B6C21AA429B003630B9 /* LHSubEditVC.m */; };
+		9C8DDC15219D134900799737 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC14219D134900799737 /* AppDelegate.m */; };
+		9C8DDC18219D134900799737 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC17219D134900799737 /* ViewController.m */; };
+		9C8DDC1B219D134900799737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8DDC19219D134900799737 /* Main.storyboard */; };
+		9C8DDC1D219D134900799737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C8DDC1C219D134900799737 /* Assets.xcassets */; };
+		9C8DDC20219D134900799737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C8DDC1E219D134900799737 /* LaunchScreen.storyboard */; };
+		9C8DDC23219D134900799737 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC22219D134900799737 /* main.m */; };
+		9C8DDC2D219D134900799737 /* LHEditToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC2C219D134900799737 /* LHEditToolTests.m */; };
+		9C8DDC38219D134A00799737 /* LHEditToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC37219D134A00799737 /* LHEditToolUITests.m */; };
+		9C8DDC5A219D171E00799737 /* UITableViewCell+LHCate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC48219D171E00799737 /* UITableViewCell+LHCate.m */; };
+		9C8DDC5B219D171E00799737 /* LHEditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8DDC49219D171E00799737 /* LHEditVC.xib */; };
+		9C8DDC5C219D171E00799737 /* LHEditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC4B219D171E00799737 /* LHEditVC.m */; };
+		9C8DDC5D219D171E00799737 /* LHContentEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC4E219D171E00799737 /* LHContentEditModel.m */; };
+		9C8DDC5E219D171E00799737 /* LHTitleEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC51219D171E00799737 /* LHTitleEditModel.m */; };
+		9C8DDC5F219D171E00799737 /* LHContentEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC54219D171E00799737 /* LHContentEditCell.m */; };
+		9C8DDC60219D171E00799737 /* LHTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC57219D171E00799737 /* LHTextView.m */; };
+		9C8DDC61219D171E00799737 /* LHTitleEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8DDC59219D171E00799737 /* LHTitleEditCell.m */; };
+		9CBCDEF021ADA2DB00A5E569 /* LHEditToolConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCDEEF21ADA2DB00A5E569 /* LHEditToolConfig.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C8DDC29219D134900799737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C8DDC08219D134900799737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C8DDC0F219D134900799737;
+			remoteInfo = LHEditTool;
+		};
+		9C8DDC34219D134A00799737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C8DDC08219D134900799737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C8DDC0F219D134900799737;
+			remoteInfo = LHEditTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7652D4938C779C208E63B4CE /* Pods-LHEditTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHEditTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHEditTool/Pods-LHEditTool.debug.xcconfig"; sourceTree = "<group>"; };
+		9C814B4E219D50E2003630B9 /* LHImageEditCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHImageEditCell.h; sourceTree = "<group>"; };
+		9C814B4F219D50E2003630B9 /* LHImageEditCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHImageEditCell.m; sourceTree = "<group>"; };
+		9C814B51219D51BE003630B9 /* LHImageEditModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHImageEditModel.h; sourceTree = "<group>"; };
+		9C814B52219D51BE003630B9 /* LHImageEditModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHImageEditModel.m; sourceTree = "<group>"; };
+		9C814B54219D6A4A003630B9 /* UIImage+Edit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Edit.h"; sourceTree = "<group>"; };
+		9C814B55219D6A4A003630B9 /* UIImage+Edit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Edit.m"; sourceTree = "<group>"; };
+		9C814B57219D790F003630B9 /* LHEditAccessoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHEditAccessoryView.h; sourceTree = "<group>"; };
+		9C814B58219D790F003630B9 /* LHEditAccessoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHEditAccessoryView.m; sourceTree = "<group>"; };
+		9C814B5B219DD120003630B9 /* pickImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pickImage@2x.png"; sourceTree = "<group>"; };
+		9C814B5D219EACD8003630B9 /* keybord@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keybord@2x.png"; sourceTree = "<group>"; };
+		9C814B5F219EB3AE003630B9 /* keybordf@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keybordf@2x.png"; sourceTree = "<group>"; };
+		9C814B61219EB4AF003630B9 /* keybordff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keybordff@2x.png"; sourceTree = "<group>"; };
+		9C814B6321A078C1003630B9 /* LHEditCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHEditCellDelegate.h; sourceTree = "<group>"; };
+		9C814B6421A1A83C003630B9 /* NSString+LHCellHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LHCellHeight.h"; sourceTree = "<group>"; };
+		9C814B6521A1A83C003630B9 /* NSString+LHCellHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LHCellHeight.m"; sourceTree = "<group>"; };
+		9C814B6821A55317003630B9 /* LHLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHLabel.h; sourceTree = "<group>"; };
+		9C814B6921A55317003630B9 /* LHLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHLabel.m; sourceTree = "<group>"; };
+		9C814B6B21AA429B003630B9 /* LHSubEditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHSubEditVC.h; sourceTree = "<group>"; };
+		9C814B6C21AA429B003630B9 /* LHSubEditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHSubEditVC.m; sourceTree = "<group>"; };
+		9C8DDC10219D134900799737 /* LHEditTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHEditTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8DDC13219D134900799737 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9C8DDC14219D134900799737 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9C8DDC16219D134900799737 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9C8DDC17219D134900799737 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9C8DDC1A219D134900799737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C8DDC1C219D134900799737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C8DDC1F219D134900799737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C8DDC21219D134900799737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8DDC22219D134900799737 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C8DDC28219D134900799737 /* LHEditToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHEditToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8DDC2C219D134900799737 /* LHEditToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHEditToolTests.m; sourceTree = "<group>"; };
+		9C8DDC2E219D134900799737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8DDC33219D134A00799737 /* LHEditToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHEditToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8DDC37219D134A00799737 /* LHEditToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHEditToolUITests.m; sourceTree = "<group>"; };
+		9C8DDC39219D134A00799737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C8DDC47219D171E00799737 /* UITableViewCell+LHCate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+LHCate.h"; sourceTree = "<group>"; };
+		9C8DDC48219D171E00799737 /* UITableViewCell+LHCate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+LHCate.m"; sourceTree = "<group>"; };
+		9C8DDC49219D171E00799737 /* LHEditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHEditVC.xib; sourceTree = "<group>"; };
+		9C8DDC4A219D171E00799737 /* LHEditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHEditVC.h; sourceTree = "<group>"; };
+		9C8DDC4B219D171E00799737 /* LHEditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHEditVC.m; sourceTree = "<group>"; };
+		9C8DDC4D219D171E00799737 /* LHContentEditModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHContentEditModel.h; sourceTree = "<group>"; };
+		9C8DDC4E219D171E00799737 /* LHContentEditModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHContentEditModel.m; sourceTree = "<group>"; };
+		9C8DDC4F219D171E00799737 /* LHEditModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHEditModelProtocol.h; sourceTree = "<group>"; };
+		9C8DDC50219D171E00799737 /* LHTitleEditModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHTitleEditModel.h; sourceTree = "<group>"; };
+		9C8DDC51219D171E00799737 /* LHTitleEditModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHTitleEditModel.m; sourceTree = "<group>"; };
+		9C8DDC53219D171E00799737 /* LHContentEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHContentEditCell.h; sourceTree = "<group>"; };
+		9C8DDC54219D171E00799737 /* LHContentEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHContentEditCell.m; sourceTree = "<group>"; };
+		9C8DDC55219D171E00799737 /* LHEditCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHEditCellProtocol.h; sourceTree = "<group>"; };
+		9C8DDC56219D171E00799737 /* LHTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHTextView.h; sourceTree = "<group>"; };
+		9C8DDC57219D171E00799737 /* LHTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHTextView.m; sourceTree = "<group>"; };
+		9C8DDC58219D171E00799737 /* LHTitleEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHTitleEditCell.h; sourceTree = "<group>"; };
+		9C8DDC59219D171E00799737 /* LHTitleEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHTitleEditCell.m; sourceTree = "<group>"; };
+		9CBCDEEE21ADA2DB00A5E569 /* LHEditToolConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHEditToolConfig.h; sourceTree = "<group>"; };
+		9CBCDEEF21ADA2DB00A5E569 /* LHEditToolConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHEditToolConfig.m; sourceTree = "<group>"; };
+		A66A4A68A425FD55C1E61E90 /* Pods-LHEditTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHEditTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-LHEditTool/Pods-LHEditTool.release.xcconfig"; sourceTree = "<group>"; };
+		B9E56C64FDD35E0B3897E083 /* Pods_LHEditTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LHEditTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C8DDC0D219D134900799737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45517A66BDED489BAD500AE2 /* Pods_LHEditTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8DDC25219D134900799737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8DDC30219D134A00799737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		794238F56E9F8C72D77F1092 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9E56C64FDD35E0B3897E083 /* Pods_LHEditTool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C814B5A219DD10D003630B9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9C814B5B219DD120003630B9 /* pickImage@2x.png */,
+				9C814B5D219EACD8003630B9 /* keybord@2x.png */,
+				9C814B5F219EB3AE003630B9 /* keybordf@2x.png */,
+				9C814B61219EB4AF003630B9 /* keybordff@2x.png */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9C814B6721A552EE003630B9 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				9C814B6821A55317003630B9 /* LHLabel.h */,
+				9C814B6921A55317003630B9 /* LHLabel.m */,
+				9CBCDEEE21ADA2DB00A5E569 /* LHEditToolConfig.h */,
+				9CBCDEEF21ADA2DB00A5E569 /* LHEditToolConfig.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		9C8DDC07219D134900799737 = {
+			isa = PBXGroup;
+			children = (
+				9C8DDC12219D134900799737 /* LHEditTool */,
+				9C8DDC2B219D134900799737 /* LHEditToolTests */,
+				9C8DDC36219D134A00799737 /* LHEditToolUITests */,
+				9C8DDC11219D134900799737 /* Products */,
+				B90FDB9CA7C5E2A2F08AAFAA /* Pods */,
+				794238F56E9F8C72D77F1092 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C8DDC11219D134900799737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C8DDC10219D134900799737 /* LHEditTool.app */,
+				9C8DDC28219D134900799737 /* LHEditToolTests.xctest */,
+				9C8DDC33219D134A00799737 /* LHEditToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C8DDC12219D134900799737 /* LHEditTool */ = {
+			isa = PBXGroup;
+			children = (
+				9C8DDC45219D171E00799737 /* EDIT */,
+				9C8DDC13219D134900799737 /* AppDelegate.h */,
+				9C8DDC14219D134900799737 /* AppDelegate.m */,
+				9C814B6B21AA429B003630B9 /* LHSubEditVC.h */,
+				9C814B6C21AA429B003630B9 /* LHSubEditVC.m */,
+				9C8DDC16219D134900799737 /* ViewController.h */,
+				9C8DDC17219D134900799737 /* ViewController.m */,
+				9C8DDC19219D134900799737 /* Main.storyboard */,
+				9C8DDC1C219D134900799737 /* Assets.xcassets */,
+				9C8DDC1E219D134900799737 /* LaunchScreen.storyboard */,
+				9C8DDC21219D134900799737 /* Info.plist */,
+				9C8DDC22219D134900799737 /* main.m */,
+			);
+			path = LHEditTool;
+			sourceTree = "<group>";
+		};
+		9C8DDC2B219D134900799737 /* LHEditToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C8DDC2C219D134900799737 /* LHEditToolTests.m */,
+				9C8DDC2E219D134900799737 /* Info.plist */,
+			);
+			path = LHEditToolTests;
+			sourceTree = "<group>";
+		};
+		9C8DDC36219D134A00799737 /* LHEditToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C8DDC37219D134A00799737 /* LHEditToolUITests.m */,
+				9C8DDC39219D134A00799737 /* Info.plist */,
+			);
+			path = LHEditToolUITests;
+			sourceTree = "<group>";
+		};
+		9C8DDC45219D171E00799737 /* EDIT */ = {
+			isa = PBXGroup;
+			children = (
+				9C814B6721A552EE003630B9 /* base */,
+				9C814B5A219DD10D003630B9 /* src */,
+				9C8DDC52219D171E00799737 /* View */,
+				9C8DDC4C219D171E00799737 /* Model */,
+				9C8DDC46219D171E00799737 /* Categary */,
+				9C8DDC49219D171E00799737 /* LHEditVC.xib */,
+				9C8DDC4A219D171E00799737 /* LHEditVC.h */,
+				9C8DDC4B219D171E00799737 /* LHEditVC.m */,
+			);
+			path = EDIT;
+			sourceTree = "<group>";
+		};
+		9C8DDC46219D171E00799737 /* Categary */ = {
+			isa = PBXGroup;
+			children = (
+				9C8DDC47219D171E00799737 /* UITableViewCell+LHCate.h */,
+				9C8DDC48219D171E00799737 /* UITableViewCell+LHCate.m */,
+				9C814B54219D6A4A003630B9 /* UIImage+Edit.h */,
+				9C814B55219D6A4A003630B9 /* UIImage+Edit.m */,
+				9C814B6421A1A83C003630B9 /* NSString+LHCellHeight.h */,
+				9C814B6521A1A83C003630B9 /* NSString+LHCellHeight.m */,
+			);
+			path = Categary;
+			sourceTree = "<group>";
+		};
+		9C8DDC4C219D171E00799737 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C8DDC4F219D171E00799737 /* LHEditModelProtocol.h */,
+				9C8DDC4D219D171E00799737 /* LHContentEditModel.h */,
+				9C8DDC4E219D171E00799737 /* LHContentEditModel.m */,
+				9C8DDC50219D171E00799737 /* LHTitleEditModel.h */,
+				9C8DDC51219D171E00799737 /* LHTitleEditModel.m */,
+				9C814B51219D51BE003630B9 /* LHImageEditModel.h */,
+				9C814B52219D51BE003630B9 /* LHImageEditModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C8DDC52219D171E00799737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C8DDC55219D171E00799737 /* LHEditCellProtocol.h */,
+				9C814B6321A078C1003630B9 /* LHEditCellDelegate.h */,
+				9C8DDC53219D171E00799737 /* LHContentEditCell.h */,
+				9C8DDC54219D171E00799737 /* LHContentEditCell.m */,
+				9C8DDC56219D171E00799737 /* LHTextView.h */,
+				9C8DDC57219D171E00799737 /* LHTextView.m */,
+				9C8DDC58219D171E00799737 /* LHTitleEditCell.h */,
+				9C8DDC59219D171E00799737 /* LHTitleEditCell.m */,
+				9C814B4E219D50E2003630B9 /* LHImageEditCell.h */,
+				9C814B4F219D50E2003630B9 /* LHImageEditCell.m */,
+				9C814B57219D790F003630B9 /* LHEditAccessoryView.h */,
+				9C814B58219D790F003630B9 /* LHEditAccessoryView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B90FDB9CA7C5E2A2F08AAFAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7652D4938C779C208E63B4CE /* Pods-LHEditTool.debug.xcconfig */,
+				A66A4A68A425FD55C1E61E90 /* Pods-LHEditTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C8DDC0F219D134900799737 /* LHEditTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C8DDC3C219D134A00799737 /* Build configuration list for PBXNativeTarget "LHEditTool" */;
+			buildPhases = (
+				1639D66AE39E4366C70D632E /* [CP] Check Pods Manifest.lock */,
+				9C8DDC0C219D134900799737 /* Sources */,
+				9C8DDC0D219D134900799737 /* Frameworks */,
+				9C8DDC0E219D134900799737 /* Resources */,
+				5D6BC6F5A87A1B420E2F1B80 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHEditTool;
+			productName = LHEditTool;
+			productReference = 9C8DDC10219D134900799737 /* LHEditTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C8DDC27219D134900799737 /* LHEditToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C8DDC3F219D134A00799737 /* Build configuration list for PBXNativeTarget "LHEditToolTests" */;
+			buildPhases = (
+				9C8DDC24219D134900799737 /* Sources */,
+				9C8DDC25219D134900799737 /* Frameworks */,
+				9C8DDC26219D134900799737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C8DDC2A219D134900799737 /* PBXTargetDependency */,
+			);
+			name = LHEditToolTests;
+			productName = LHEditToolTests;
+			productReference = 9C8DDC28219D134900799737 /* LHEditToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C8DDC32219D134A00799737 /* LHEditToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C8DDC42219D134A00799737 /* Build configuration list for PBXNativeTarget "LHEditToolUITests" */;
+			buildPhases = (
+				9C8DDC2F219D134A00799737 /* Sources */,
+				9C8DDC30219D134A00799737 /* Frameworks */,
+				9C8DDC31219D134A00799737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C8DDC35219D134A00799737 /* PBXTargetDependency */,
+			);
+			name = LHEditToolUITests;
+			productName = LHEditToolUITests;
+			productReference = 9C8DDC33219D134A00799737 /* LHEditToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C8DDC08219D134900799737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "李辉";
+				TargetAttributes = {
+					9C8DDC0F219D134900799737 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9C8DDC27219D134900799737 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9C8DDC0F219D134900799737;
+					};
+					9C8DDC32219D134A00799737 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9C8DDC0F219D134900799737;
+					};
+				};
+			};
+			buildConfigurationList = 9C8DDC0B219D134900799737 /* Build configuration list for PBXProject "LHEditTool" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C8DDC07219D134900799737;
+			productRefGroup = 9C8DDC11219D134900799737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C8DDC0F219D134900799737 /* LHEditTool */,
+				9C8DDC27219D134900799737 /* LHEditToolTests */,
+				9C8DDC32219D134A00799737 /* LHEditToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C8DDC0E219D134900799737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C814B5C219DD120003630B9 /* pickImage@2x.png in Resources */,
+				9C8DDC20219D134900799737 /* LaunchScreen.storyboard in Resources */,
+				9C8DDC1D219D134900799737 /* Assets.xcassets in Resources */,
+				9C814B60219EB3AE003630B9 /* keybordf@2x.png in Resources */,
+				9C814B5E219EACD8003630B9 /* keybord@2x.png in Resources */,
+				9C8DDC5B219D171E00799737 /* LHEditVC.xib in Resources */,
+				9C8DDC1B219D134900799737 /* Main.storyboard in Resources */,
+				9C814B62219EB4AF003630B9 /* keybordff@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8DDC26219D134900799737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8DDC31219D134A00799737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1639D66AE39E4366C70D632E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LHEditTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D6BC6F5A87A1B420E2F1B80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LHEditTool/Pods-LHEditTool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LHEditTool/Pods-LHEditTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C8DDC0C219D134900799737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C814B50219D50E2003630B9 /* LHImageEditCell.m in Sources */,
+				9C8DDC5A219D171E00799737 /* UITableViewCell+LHCate.m in Sources */,
+				9C814B56219D6A4A003630B9 /* UIImage+Edit.m in Sources */,
+				9C814B6D21AA429E003630B9 /* LHSubEditVC.m in Sources */,
+				9C8DDC5C219D171E00799737 /* LHEditVC.m in Sources */,
+				9C814B53219D51BE003630B9 /* LHImageEditModel.m in Sources */,
+				9C8DDC61219D171E00799737 /* LHTitleEditCell.m in Sources */,
+				9CBCDEF021ADA2DB00A5E569 /* LHEditToolConfig.m in Sources */,
+				9C814B6621A1A83C003630B9 /* NSString+LHCellHeight.m in Sources */,
+				9C8DDC18219D134900799737 /* ViewController.m in Sources */,
+				9C814B6A21A5531C003630B9 /* LHLabel.m in Sources */,
+				9C814B59219D790F003630B9 /* LHEditAccessoryView.m in Sources */,
+				9C8DDC5F219D171E00799737 /* LHContentEditCell.m in Sources */,
+				9C8DDC23219D134900799737 /* main.m in Sources */,
+				9C8DDC60219D171E00799737 /* LHTextView.m in Sources */,
+				9C8DDC5E219D171E00799737 /* LHTitleEditModel.m in Sources */,
+				9C8DDC15219D134900799737 /* AppDelegate.m in Sources */,
+				9C8DDC5D219D171E00799737 /* LHContentEditModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8DDC24219D134900799737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8DDC2D219D134900799737 /* LHEditToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C8DDC2F219D134A00799737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8DDC38219D134A00799737 /* LHEditToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C8DDC2A219D134900799737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C8DDC0F219D134900799737 /* LHEditTool */;
+			targetProxy = 9C8DDC29219D134900799737 /* PBXContainerItemProxy */;
+		};
+		9C8DDC35219D134A00799737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C8DDC0F219D134900799737 /* LHEditTool */;
+			targetProxy = 9C8DDC34219D134A00799737 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C8DDC19219D134900799737 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C8DDC1A219D134900799737 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C8DDC1E219D134900799737 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C8DDC1F219D134900799737 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C8DDC3A219D134A00799737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9C8DDC3B219D134A00799737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C8DDC3D219D134A00799737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7652D4938C779C208E63B4CE /* Pods-LHEditTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KB5HFU3C2;
+				INFOPLIST_FILE = LHEditTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lihui-12013.LHEditTool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		9C8DDC3E219D134A00799737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66A4A68A425FD55C1E61E90 /* Pods-LHEditTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KB5HFU3C2;
+				INFOPLIST_FILE = LHEditTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lihui-12013.LHEditTool";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+		9C8DDC40219D134A00799737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LHEditToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lihui-12013.LHEditToolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHEditTool.app/LHEditTool";
+			};
+			name = Debug;
+		};
+		9C8DDC41219D134A00799737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LHEditToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lihui-12013.LHEditToolTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHEditTool.app/LHEditTool";
+			};
+			name = Release;
+		};
+		9C8DDC43219D134A00799737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LHEditToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lihui-12013.LHEditToolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LHEditTool;
+			};
+			name = Debug;
+		};
+		9C8DDC44219D134A00799737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LHEditToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "lihui-12013.LHEditToolUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LHEditTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C8DDC0B219D134900799737 /* Build configuration list for PBXProject "LHEditTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8DDC3A219D134A00799737 /* Debug */,
+				9C8DDC3B219D134A00799737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C8DDC3C219D134A00799737 /* Build configuration list for PBXNativeTarget "LHEditTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8DDC3D219D134A00799737 /* Debug */,
+				9C8DDC3E219D134A00799737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C8DDC3F219D134A00799737 /* Build configuration list for PBXNativeTarget "LHEditToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8DDC40219D134A00799737 /* Debug */,
+				9C8DDC41219D134A00799737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C8DDC42219D134A00799737 /* Build configuration list for PBXNativeTarget "LHEditToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C8DDC43219D134A00799737 /* Debug */,
+				9C8DDC44219D134A00799737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C8DDC08219D134900799737 /* Project object */;
+}
