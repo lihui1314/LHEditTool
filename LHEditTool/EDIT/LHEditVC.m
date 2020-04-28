@@ -18,7 +18,7 @@
 #import "LHEditAccessoryView.h"
 #import "NSString+LHCellHeight.h"
 #define  ScreenHeight  [UIScreen mainScreen].bounds.size.height
-@interface LHEditVC ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,LHEditCellDelegate>
+@interface LHEditVC ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,LHEditCellDelegate,LHEditAccessoryViewDelegate>
 @property(nonatomic,strong)UITableView*tableView;
 @property(nonatomic,strong)NSMutableArray*dataArray;
 @property(nonatomic,strong)UIImagePickerController*imagePicker;

@@ -19,7 +19,6 @@
     [LHEditToolConfig shareInstance].lineSpacing = 6;
     self.insertImageEnabled = YES;
     self.title = @"LHEditTool";
-    
     [self lh_addItems];
 }
 
@@ -35,7 +34,7 @@
     
 }
 -(void)rightItemAction{
-    NSMutableArray *marr =  self.lh_getDataArray;
+    NSMutableArray *editData =  self.lh_getDataArray;
 }
 
 - (void)didReceiveMemoryWarning {
